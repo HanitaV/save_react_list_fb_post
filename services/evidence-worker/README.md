@@ -1,0 +1,1 @@
+Browser capture code lives in `services/api/app/tasks.py` and runs on CloakBrowser in the dedicated `worker` Compose service. Proxy and operator-owned session loading are isolated in `services/api/app/browser_session.py`.

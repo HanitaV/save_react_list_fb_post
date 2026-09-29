@@ -1,0 +1,11 @@
+.env
+__pycache__/
+.pytest_cache/
+.venv/
+node_modules/
+.next/
+*.tsbuildinfo
+storage/evidence/*
+!storage/evidence/.gitkeep
+secrets/*
+!secrets/.gitkeep

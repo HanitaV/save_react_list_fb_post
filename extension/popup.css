@@ -1,0 +1,20 @@
+:root{color-scheme:light;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:#162131;background:#f7f9fc}
+*{box-sizing:border-box}body{margin:0;width:390px;max-height:600px;overflow:auto}main{padding:20px}
+h1{font-size:21px;letter-spacing:-.6px;margin:4px 0}p{font-size:12px;line-height:1.5;color:#5e6b7c;margin:7px 0 14px}
+.eyebrow,.section-title{font-size:10px;font-weight:750;letter-spacing:1.1px;color:#718095}.section-title{margin-top:18px;margin-bottom:8px}
+.notice{border:1px solid #e0e7f0;border-radius:10px;padding:10px 12px;font-size:12px;line-height:1.5;background:white;margin:13px 0;overflow-wrap:anywhere}
+.notice.error{border-color:#f2c6c6;color:#9b2f2f;background:#fff8f8}
+button{cursor:pointer;border:0;border-radius:9px;font:inherit;font-size:12px;font-weight:650;padding:10px 13px}
+button:disabled{opacity:.5;cursor:wait}.primary{width:100%;background:#173b73;color:white}.primary:hover{background:#224e91}
+.secondary{width:100%;border:1px solid #d4deeb;background:white;color:#173b73;margin:10px 0}
+.text-button{padding:5px;background:transparent;color:#536b8a}.stats{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:15px 0}
+.stats div{border:1px solid #e2e8f0;border-radius:10px;background:white;padding:11px}
+.stats span,.stats strong{display:block}.stats span{font-size:10px;color:#738094;margin-bottom:4px}
+.stats strong{font-size:15px}.progress-track{width:100%;height:6px;border-radius:5px;background:#d9e2ed;overflow:hidden}
+#progressBar{height:100%;background:#173b73;width:0%;transition:width .15s}
+ol{margin:0;padding:0;list-style:none}li{background:white;border:1px solid #e2e8f0;border-radius:10px;padding:11px 12px;margin:7px 0}
+li strong{display:block;font-size:12px;margin-bottom:4px;overflow-wrap:anywhere}
+li small{display:block;color:#78879a;font-size:10px;margin-bottom:4px}
+li p{font-size:11px;margin:3px 0;overflow-wrap:anywhere}
+a{font-size:11px;color:#295aa1;overflow-wrap:anywhere}
+footer{border-top:1px solid #e1e8f0;margin-top:18px;padding-top:10px;display:flex;justify-content:space-between;align-items:center;font-size:10px;color:#77859a;gap:8px}

@@ -32,7 +32,12 @@ async function runStart(sourceTabId) {
       func:async()=>window.__FBReactionCollector.collect()
     });
     const data = collected?.[0]?.result;
-    if (!data?.reactors?.length) throw new Error("Không tìm thấy tài khoản reaction.");
+    if (!Array.isArray(data?.reactors)) {
+      throw new Error("Không nhận được kết quả từ bộ đọc reaction. Hãy tải lại bài, mở danh sách cảm xúc và thử lại.");
+    }
+    if (!data.reactors.length) {
+      throw new Error("Chưa đọc được hồ sơ từ danh sách reaction; không thể xác nhận danh sách trống.");
+    }
     const reactors = data.reactors.slice(0,MAX_ACTORS);
     await write({...initial,reactors,post_url:data.post_url,collected_at:data.collected_at,
       warnings:data.warnings || [],truncated:data.truncated || false,
